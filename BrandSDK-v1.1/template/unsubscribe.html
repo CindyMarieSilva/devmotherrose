@@ -1,0 +1,24 @@
+<h1>{{brand_name}} - Unsubscribe</h1>
+<div class="formHeaderText">
+	<p>Please enter your email address to unsubscribe from future newsletter mailings:</p> 
+</div>
+<form id="unsubscribeForm" class="form">
+	<input type="hidden" name="brand_code" value="{{brand_code}}" />
+    
+    <input type="hidden" name="successTxt" value="Unsubscribe was successfully submitted" />
+    <input type="hidden" name="thankyouTxt" value="Thank You!" />
+    <input type="hidden" name="closeTxt" value="Click anywhere to close." />
+
+	<div id="emailWrapper" class="row">
+		<label id="emailLabel" class="unsubscribeField label" for="email">E-Mail:<span class="required">*</span></label>
+    	<input id="email" class="unsubscribeField fieldInput"  name="email" id="email" name="email" type="email" data-parsley-trigger="change" data-parsley-type="email" data-parsley-required-message="Email is required." data-parsley-trigger="keyup" data-parsley-required="true"/>
+    </div>
+    <div id="verify_emailWrapper" class="row">
+		<label id="verify_emailLabel" class="unsubscribeField label" for="email">Verify E-Mail:<span class="required">*</span></label>
+    	<input id="verify_email" class="unsubscribeField fieldInput"  name="email" id="email" name="email" type="email" data-parsley-trigger="change" data-parsley-type="email" data-parsley-required-message="Email is required." data-parsley-trigger="keyup" data-parsley-required="true" data-parsley-equalto="#email"/>
+    </div>
+	<div id="formRequirementsWrapper">
+		<p><span class="required">*</span> Required Fields &nbsp;</p>
+	</div>
+	<div id="submitBtnWrapper"><input id="submit" class="unsubscribeField fieldInput" type="submit" value="Submit"/></div>
+</form>

@@ -1,0 +1,385 @@
+/*==================================================
+=            Navigation            =
+==================================================*/
+nav {
+    position: relative;
+}
+
+.flex-center{
+  display:flex;
+  justify-content:center;
+}
+#menuToggle
+{
+  -webkit-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  z-index:3;
+}
+
+.hamburger{
+  display: flex;
+  justify-content:center;
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width:50px;
+  height:50px;
+  z-index: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  background:#ffd13f;
+}
+
+#nav-checkbox:checked ~ .hamburger{
+  background:#000;
+  display: flex;
+  justify-content:center;
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width:50px;
+  height:50px;
+  z-index: 5;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 10; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+#nav-label {
+    position: absolute;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    left: 41px;
+    top: 32px;
+    font-size: 14px;
+    font-family: 'Amador', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#nav-checkbox {
+   display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+#nav-checkbox:checked + #nav-label:after {
+  content: "close";
+  position: absolute;
+  z-index: 55;
+  top: 0px;
+  display:  block;
+  letter-spacing: 1.5px;
+  color: #ffd13f;
+}
+
+
+/*
+ * Just a quick hamburger
+ */
+
+#menuToggle .hamburger span {
+    display: inline-block;
+    width: 2px;
+    height: 25px;
+    margin: 8px 5px;
+    position: relative;
+    background: #000;
+    border-radius: 3px;
+    z-index: 5;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle .hamburger span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle .hamburger span:nth-last-child(2) {
+    height: 14px!important;
+    align-self: center;
+    top: -3px;
+}
+#menuToggle .hamburger span:nth-last-child(3)
+{
+  transform-origin: 0% 100%;
+}
+
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ .hamburger span {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0px, -7px);
+    background: #ffd13f;
+    height: 33px;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ .hamburger span:nth-last-child(2)
+{
+  opacity: 0;
+  display:none;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ .hamburger span:nth-last-child(3) {
+    opacity: 1;
+    transform: rotate(45deg) translate(-11px, -3px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  top:        0; 
+  left:       0; 
+  position: fixed;
+  background: #ffd13f;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  height:  auto;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ul#menu li, #menu-social {text-align:  center;}
+
+#menu li
+{
+  color:#000;
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+#menu li a, a:active, a:hover, a:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+
+
+/*
+ * Just a quick faq-hamburger
+ */
+
+.faq-hamburger{
+  background-color:#ffd13f;
+  width:50px;
+  height:50px;
+  z-index:100;
+  float: right;
+}
+
+#faq-back-navs{
+  position:absolute;
+  right: 6.5%;
+}
+
+.back-to-faq {
+    float: right;
+}
+
+.faq-hamburger span {
+    display: inline-block;
+    width: 2px;
+    height: 25px;
+    margin: 4px 5px;
+    position: relative;
+    background: #000;
+    border-radius: 3px;
+    z-index: 5;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.faq-hamburger span:first-child
+{
+  transform-origin: 0% 0%;
+}
+.faq-hamburger span:nth-last-child(2) {
+    height: 14px!important;
+    align-self: center;
+    top: -3px;
+}
+.faq-hamburger span:nth-last-child(3)
+{
+  transform-origin: 0% 100%;
+}
+
+
+/* 
+ * Transform all the slices of faq-hamburger
+ * into a crossmark.
+ */
+.faq-hamburger span {
+    opacity: 1;
+    transform: rotate(-45deg) translate(2px, 8px);
+    background: #000;
+    height: 33px;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+.faq-hamburger span:nth-last-child(2)
+{
+  opacity: 0;
+  display:none;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+.faq-hamburger span:nth-last-child(3) {
+    opacity: 1;
+    transform: rotate(45deg) translate(-10px, 0px);
+}
+
+p#faq-nav-label{
+    color: #000;
+    z-index: 9;
+    text-align:  center;
+    margin-top: -15px;
+    font-size: 14px;
+    font-family: 'Amador', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+/*==================================================
+=            Site Navigation Buttons             =
+==================================================*/
+
+.btn.sharp {
+  border-radius:0;
+}
+
+.footer.age-gate a:hover, .footer a:hover{
+  color:#ffd13f;
+}
+
+.nav-btn {
+  color: #FFD13F;
+  background-color: #000000;
+  border-color: #FFD13F;
+  padding: 10px 22px 8px 22px;
+  border-width: 1px;
+  letter-spacing: 1.3px;
+  font-size: 3.5vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+} 
+
+.faq-back-btn {
+    color: #000;
+    background-color: #FFD13F;
+    padding: 0px 10px 0px 10px;
+    letter-spacing: 1.3px;
+    font-size: 2vw;
+    display: flex;
+    float: right;
+    align-items: center;
+    border: none;
+}
+ 
+.nav-btn:hover, 
+.nav-btn:focus, 
+.nav-btn:active, 
+.nav-btn.active, 
+.open .dropdown-toggle.nav-btn { 
+  color: #FFD13F; 
+  background-color: #000; 
+  border-color: #FFD13F; 
+} 
+ 
+.nav-btn:active, 
+.nav-btn.active, 
+.open .dropdown-toggle.nav-btn { 
+  background-image: none; 
+} 
+ 
+.nav-btn.disabled, 
+.nav-btn[disabled], 
+fieldset[disabled] .nav-btn, 
+.nav-btn.disabled:hover, 
+.nav-btn[disabled]:hover, 
+fieldset[disabled] .nav-btn:hover, 
+.nav-btn.disabled:focus, 
+.nav-btn[disabled]:focus, 
+fieldset[disabled] .nav-btn:focus, 
+.nav-btn.disabled:active, 
+.nav-btn[disabled]:active, 
+fieldset[disabled] .nav-btn:active, 
+.nav-btn.disabled.active, 
+.nav-btn[disabled].active, 
+fieldset[disabled] .nav-btn.active { 
+  background-color: #000000; 
+  border-color: #FFD13F; 
+} 
+ 
+.nav-btn .badge { 
+  color: #000000; 
+  background-color: #FFD13F; 
+}

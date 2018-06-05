@@ -1,0 +1,617 @@
+{
+	"brands": {
+		"ALM": {
+	     	"winefinder_id": 95,
+	     	"brand_code": "ALM",
+	     	"brand_name": "Alamos Wine",
+	     	"phone": "877.798.2783",
+	     	"brand_email": "consumerrelations@alamoswineus.com",
+	     	"winefinder": "/store-locator.php",
+	     	"privacy_policy": "/legal/privacy-policy.php"
+	    },
+		"AND": {
+	     	"winefinder_id": 78,
+	     	"brand_code": "AND",
+	     	"brand_name": "Andre",
+	     	"phone": "1-877-842-6373",
+	     	"brand_email": "consumerrelations@andre-champagne.com",
+	     	"winefinder": "/store-locator.php",
+	     	"privacy_policy": "/legal/privacy-policy.php"
+	    },
+		"APT": {
+	     	"winefinder_id": 48,
+	     	"brand_code": "APT",
+	     	"brand_name": "Apothic",
+	     	"phone": "1-877-425-5635",
+	     	"brand_email": "consumerrelations@apothic.com",
+	     	"winefinder": "/buy.html",
+	     	"privacy_policy": "/privacy.html"
+	    },
+	    "ARG": {
+                "winefinder_id": 0,
+                "brand_code": "ARG",
+                "brand_name": "Argonaut",
+                "phone": "1-855-924-2556",
+                "brand_email": "consumerrelations@argonautdistillingcompany.com",
+                "winefinder": "",
+                "privacy_policy": ""
+	    },
+		"BDY": {
+			"winefinder_id": 24,
+			"brand_code": "BDY",
+			"brand_name": "E&J Brandy",
+			"phone": "1-800-213-7391",
+			"brand_email": "consumerrelations@ejbrandy.com",
+			"winefinder": "/where-to-buy-brandy.php",
+			"privacy_policy": "/legal/privacy-policy.php"
+		},
+		"BFC": {
+			"winefinder_id": 26,
+			"brand_code": "BFC",
+			"brand_name": "Barefoot",
+			"phone": "1-800-750-8828",
+			"brand_email": "consumerrelations@barefootwine.com",
+			"winefinder": "/locate-our-wine",
+			"privacy_policy": "/privacy-policy"
+		},
+		"BFL": {
+			"winefinder_id": 1,
+			"brand_code": "BFL",
+			"brand_name": "Bear Flag Premium",
+			"phone": "",
+			"brand_email": "",
+			"winefinder": "",
+			"privacy_policy": ""
+		},
+	    "BNJ": {
+               "winefinder_id": 20,
+               "brand_code": "BNJ",
+               "brand_name": "Bartles and Jaymes",
+               "phone": "1-866-830-5714",
+               "brand_email": "consumerrelations@bartlesandjaymes.com",
+               "winefinder": "buy.php",
+               "privacy_policy": "/legal/privacy.htm"
+	    },
+	    "BRP": {
+	    	"winefinder_id": 30,
+	     	"brand_code": "BRP",
+	     	"brand_name": "Bridlewood",
+	     	"phone": "1-800-467-4100",
+	     	"brand_email": "consumerrelations@bridlewood.com",
+	     	"winefinder": "/Find-A-Store",
+	     	"privacy_policy": "/legal/privacy-policy"
+	    },
+		"BSR": {
+			"winefinder_id": 16,
+			"brand_code": "BSR",
+			"brand_name": "Bella Sera",
+			"phone": "1-866-552-3552",
+			"brand_email": "consumerrelations@bellasera.com",
+			"winefinder": "/Where-to-Buy.php",
+			"privacy_policy": "/legal/Privacy-Policy.php"
+		},
+		"CAR": {
+			"winefinder_id": 82,
+			"brand_code": "CAR",
+			"brand_name": "Carnivor Cabernet",
+			"phone": "1-855-366-9463",
+			"brand_email": "consumerrelations@carnivorcabernet.com",
+			"winefinder": "/",
+			"privacy_policy": "privacy.php"
+		},
+		"CNL": {
+                        "winefinder_id": 27,
+                        "brand_code": "CNL",
+                        "brand_name": "Maso Canali",
+                        "phone": "1-866-310-5122",
+                        "brand_email": "consumerrelations@masocanali.com",
+                        "winefinder": "/buy.php",
+                        "privacy_policy": "/legal/privacy.php"
+                },
+		"COL": {
+			"winefinder_id": 84,
+			"brand_code": "COL",
+			"brand_name": "Columbia Winery",
+			"phone": "1-855-374-9463",
+			"brand_email": "consumerrelations@columbiawinery.com",
+			"winefinder": "/store-locator",
+			"privacy_policy": "/legal/privacy-policy"
+		},
+	    "CRV": {
+	    	"winefinder_id": 11,
+	     	"brand_code": "CRV",
+	     	"brand_name": "Carlo Rossi",
+	     	"phone": "1-866-276-7745",
+	     	"brand_email": "consumerrelations@carlorossi.com",
+	     	"winefinder": "/Where-to-Buy.php",
+	     	"privacy_policy": "/Legal/Privacy-Policy.php"
+	    },
+	    "DAC": {
+	    	"winefinder_id": 32,
+	     	"brand_code": "DAC",
+	     	"brand_name": "DaVinci",
+	     	"phone": "1-855-370-9463",
+	     	"brand_email": "consumerrelations@davinciwine.com",
+	     	"winefinder": "/where-to-buy.html",
+	     	"privacy_policy": "/legal/privacy-policy.html"
+	    },
+	    "DAL": {
+	    	"winefinder_id": 115,
+	     	"brand_code": "DAL",
+	     	"brand_name": "The Dalmore",
+	     	"phone": "1-855-370-9463",
+	     	"brand_email": "consumerrelations@thedalmore.com",
+	     	"winefinder": "/where-to-buy",
+	     	"privacy_policy": "/legal/privacy-policy"
+	    },
+	    "DKH": {
+	    	"winefinder_id": 103,
+	     	"brand_code": "DKH",
+	     	"brand_name": "DarkHorse",
+	     	"phone": "1-855-362-9463",
+	     	"brand_email": "consumerrelations@darkhorse.com",
+	     	"winefinder": "/where-to-buy.php",
+	     	"privacy_policy": "/legal/privacy-policy.html"
+	    },
+	    "DFW": {
+	    	"winefinder_id": 1,
+	     	"brand_code": "DFW",
+	     	"brand_name": "Dont Forget The Wine",
+	     	"phone": "1-866-276-7745",
+	     	"brand_email": "consumerrelations@dontforgetthewine.com",
+	     	"winefinder": "/where-to-buy-wine.asp",
+	     	"privacy_policy": "/resources/legal/privacy.html"
+	    },
+		"ECD": {
+	     	"winefinder_id": 6,
+	     	"brand_code": "ECD",
+	     	"brand_name": "Ecco Domani",
+	     	"phone": "1-866-326-3662",
+	     	"brand_email": "consumerrelations@eccodomani.com",
+	     	"winefinder": "/our-wines",
+	     	"privacy_policy": "/legal/privacy-policy"
+	    },
+		"EJG": {
+	     	"winefinder_id": 13,
+	     	"brand_code": "EJG",
+	     	"brand_name": "Gallo Family Vineyards",
+	     	"phone": "1-877-425-5696",
+	     	"brand_email": "consumerrelations@gallofamily.com",
+	     	"winefinder": "/where-to-buy.html",
+	     	"privacy_policy": "/legal/privacy-policy.html"
+	    },
+	    "EVW": {
+	     	"winefinder_id": 37,
+	     	"brand_code": "EVW",
+	     	"brand_name": "Edna Valley Vineyard",
+	     	"phone": "1-866-221-8571",
+	     	"brand_email": "consumerrelations@ednavalleyvineyard.com",
+	     	"winefinder": "/store-locator.html",
+	     	"privacy_policy": "/legal/privacy-policy.html"
+	    },
+		"FBR": {
+			"winefinder_id": 8,
+			"brand_code": "FBR",
+			"brand_name": "Frei Brothers",
+			"phone": "1-866-221-8571",
+			"brand_email": "consumerrelations@freibrothers.com",
+			"winefinder": "/Store-Locator.php",
+			"privacy_policy": "/Legal/Privacy-Policy.php"
+		},
+		"FCA": {
+			"winefinder_id": 47,
+			"brand_code": "FCA",
+			"brand_name": "Tequila Camarena",
+			"phone": "1-888-922-7735",
+			"brand_email": "consumerrelations@tequilacamarena.com",
+			"winefinder": "/buy",
+			"privacy_policy": "/legal/privacy-policy"
+		},
+		"FDM": {
+			"winefinder_id": 119,
+			"brand_code": "FDM",
+			"brand_name": "Fleur de Mer",
+			"phone": "1-888-922-7735",
+			"brand_email": "consumerrelations@fleurdemerwine.com",
+			"winefinder": "/#purchase",
+			"privacy_policy": "/legal/privacy-policy"
+		},
+		"GAL": {
+			"winefinder_id": 117,
+			"brand_code": "GAL",
+			"brand_name": "Gallo",
+			"phone": "1-866-599-8477",
+			"brand_email": "consumerrelations@gallo.com",
+			"winefinder": "/buy",
+			"privacy_policy": "/privacy-policy"
+		},
+		"GPN": {
+			"winefinder_id": 68,
+			"brand_code": "GPN",
+			"brand_name": "Ghost Pines",
+			"phone": "1-866-599-8477",
+			"brand_email": "consumerrelations@ghostpines.com",
+			"winefinder": "/buy",
+			"privacy_policy": "/privacy-policy"
+		},
+		"GSS": {
+			"winefinder_id": 87,
+			"brand_code": "GSS",
+			"brand_name": "Gallo Signature Series",
+			"phone": "1-877-638-2783",
+			"brand_email": "consumerrelations@gallosignature.com",
+			"winefinder": "/where-to-buy.html",
+			"privacy_policy": "legal/privacy-policy.html"
+		},
+		"HIH": {
+			"winefinder_id": 0,
+			"brand_code": "HIH",
+			"brand_name": "High Noon",
+			"phone": "1-855-592-8482",
+			"brand_email": "consumerrelations@highnoonvodka.com",
+			"winefinder": "/",
+			"privacy_policy": "legal/privacy-policy.html"
+		},
+		"INT": {
+			"winefinder_id": 121,
+			"brand_code": "INT",
+			"brand_name": "Intuition Wines",
+			"phone": "1-855-582-8482",
+			"brand_email": "consumerrelations@intuitionwines.com",
+			"winefinder": "/",
+			"privacy_policy": "legal/privacy-policy.html"
+		},
+	    "JBR": {
+	     	"winefinder_id": 116,
+	     	"brand_code": "JBR",
+	     	"brand_name": "John Barr",
+	     	"phone": "1-888-594-6326",
+	     	"brand_email": "consumerrelations@johnbarr.com",
+	     	"winefinder": "/Find-Our-Wines/",
+	     	"privacy_policy": "/Terms-and-Conditions/"
+	    },
+	    "JUR": {
+	     	"winefinder_id": 114,
+	     	"brand_code": "JUR",
+	     	"brand_name": "Jura Whiskey",
+	     	"phone": "1-888-594-6326",
+	     	"brand_email": "consumerrelations@jurawhiskey.com",
+	     	"winefinder": "/Find-Our-Wines/",
+	     	"privacy_policy": "/Terms-and-Conditions/"
+	    },
+	    "JVW": {
+	     	"winefinder_id": 107,
+	     	"brand_code": "JVW",
+	     	"brand_name": "J Vineyards & Winery",
+	     	"phone": "1-888-594-6326",
+	     	"brand_email": "consumerrelations@jwine.com",
+	     	"winefinder": "/Find-Our-Wines/",
+	     	"privacy_policy": "/Terms-and-Conditions/"
+	    },
+			"KNG": {
+				"winefinder_id": 0,
+				"brand_code": "KNG",
+				"brand_name": "Kingdom Wine Company",
+				"phone": "1-855-967-2286",
+				"brand_email": "consumerrelations@kingdomwinecompany.com",
+				"winefinder": "#",
+				"privacy_policy": "privacy-policy.html"
+			},
+	    "LAM": {
+	     	"winefinder_id": 47,
+	     	"brand_code": "LAM",
+	     	"brand_name": "Lamarca Prosecco",
+	     	"phone": "1-877-628-4462",
+	     	"brand_email": "consumerrelations@lamarcaprosecco.com",
+	     	"winefinder": "/Store-Locator.php",
+	     	"privacy_policy": "/Legal/Privacy-Policy.php"
+	    },
+	    "LES": {
+	     	"winefinder_id": 120,
+	     	"brand_code": "LES",
+	     	"brand_name": "Les Voiles",
+	     	"phone": "1-855-314-2556",
+	     	"brand_email": "consumerrelations@lesvoilesrose.com",
+	     	"winefinder": "/#purchase",
+	     	"privacy_policy": "/legal/privacy-policy.php"
+	    },
+	    "LCK": {
+	     	"winefinder_id": 42,
+	     	"brand_code": "LCK",
+	     	"brand_name": "Liberty Creek Wine",
+	     	"phone": "1-877-588-2783",
+	     	"brand_email": "consumerrelations@libertycreekwine.com",
+	     	"winefinder": "/where-to-buy.php",
+	     	"privacy_policy": "/legal/privacy-policy.php"
+	    },
+	    "LFI": {
+	     	"winefinder_id": 108,
+	     	"brand_code": "LFI",
+	     	"brand_name": "Lo-Fi Aperitifs",
+	     	"phone": "1-866-709-8477",
+	     	"brand_email": "consumerrelations@lofiaperitifs.com",
+	     	"winefinder": "/store-locator",
+	     	"privacy_policy": "/privacy-policy"
+	    },
+	    "LMR": {
+	     	"winefinder_id": 13,
+	     	"brand_code": "LMR",
+	     	"brand_name": "Louis M. Martini",
+	     	"phone": "1-800-321-9463",
+	     	"brand_email": "consumerrelations@louismartini.com",
+	     	"winefinder": "/store-locator",
+	     	"privacy_policy": "/legal/privacy-policy"
+	    },
+			"LSH": {
+	     	"winefinder_id": 103,
+	     	"brand_code": "LSH",
+	     	"brand_name": "Long Shot Wine",
+	     	"phone": "",
+	     	"brand_email": "consumerrelations@longshotwine.ca",
+	     	"winefinder": "",
+	     	"privacy_policy": ""
+	    },
+	    "LUX": {
+	     	"winefinder_id": 108,
+	     	"brand_code": "LUX",
+	     	"brand_name": "LUX Wines",
+	     	"phone": "1-866-709-8477",
+	     	"brand_email": "consumerrelations@luxwines.com",
+	     	"winefinder": "/store-locator",
+	     	"privacy_policy": "/privacy-policy"
+	    },
+	    "MCR": {
+	     	"winefinder_id": 19,
+	     	"brand_code": "MCR",
+	     	"brand_name": "MacMurray Ranch",
+	     	"phone": "1-888-668-7729",
+	     	"brand_email": "consumerrelations@macmurrayranch.com",
+	     	"winefinder": "/store-locator",
+	     	"privacy_policy": "/legal/privacy-policy"
+	    },
+	    "MDC": {
+	    	"winefinder_id": 109,
+	     	"brand_code": "MDC",
+	     	"brand_name": "Dolcea Winery",
+	     	"phone": "1-855-370-9463",
+	     	"brand_email": "consumerrelations@dolceawinery.com",
+	     	"winefinder": "/where-to-buy.php",
+	     	"privacy_policy": "/legal/privacy-policy.html"
+	    },
+       "MOM": {
+                "winefinder_id": 1,
+                "brand_code": "MOM",
+                "brand_name": "Mother",
+                "phone": "",
+                "brand_email": "",
+                "winefinder": "",
+                "privacy_policy": "/legal/privacy-policy.html"
+            },
+	    "MPW": {
+                "winefinder_id": 126,
+                "brand_code": "MPW",
+                "brand_name": "Mountain Peak Winery",
+                "phone": "",
+                "brand_email": "consumerrelations@mountpeakwinery.com",
+                "winefinder": "",
+                "privacy_policy": ""
+            },
+	    "MRU": {
+	     	"winefinder_id": 18,
+	     	"brand_code": "MRU",
+	     	"brand_name": "Mirassou",
+	     	"phone": "1-888-647-2776",
+	     	"brand_email": "consumerrelations@mirassou.com",
+	     	"winefinder": "http://www.mirassou.com/where-to-buy.asp",
+	     	"privacy_policy": "http://www.mirassou.com/resources/legal/privacy.html"
+	    },
+		"NAM": {
+			"winefinder_id": 35,
+			"brand_code": "NAM",
+			"brand_name": "New Amsterdam",
+			"phone": "1-877-879-2446",
+			"brand_email": "consumerrelations@www.newamsterdamspirits.com",
+			"winefinder": "/",
+			"privacy_policy": "/"
+		},
+		"NTR": {
+			"winefinder_id": 128,
+			"brand_code": "NTR",
+			"brand_name": "Night Train",
+			"phone": "",
+			"brand_email": "consumerrelations@drinknighttrain.com",
+			"winefinder": "/",
+			"privacy_policy": "/"
+		},
+		"PHY": {
+	     	"winefinder_id": 122,
+	     	"brand_code": "PHY",
+	     	"brand_name": "Prophecy",
+	     	"phone": "1.855.567.2286",
+	     	"brand_email": "consumerrelations@prophecywines.com",
+	     	"winefinder": "/#purchase",
+	     	"privacy_policy": "/legal/privacy-policy.php"
+	    },
+        "PVB": {
+            "winefinder_id": 129,
+            "brand_code": "PVB",
+            "brand_name": "Proverb",
+            "phone": "",
+            "brand_email": "",
+            "winefinder": "/",
+            "privacy_policy": "/legal/privacy-policy.php"
+        },
+        "PVL": {
+                "winefinder_id": 12,
+                "brand_code": "PVL",
+                "brand_name": "Peter Vella",
+                "phone": "1.866.783.5521",
+                "brand_email": "consumerrelations@petervella.com",
+                "winefinder": "/",
+                "privacy_policy": "/"
+            },
+
+        "RDS": {
+	     	"winefinder_id": 8,
+	     	"brand_code": "RDS",
+	     	"brand_name": "Frei Brothers",
+	     	"phone": "1-866-346-3963",
+	     	"brand_email": "consumerrelations@freibrothers.com",
+	     	"winefinder": "/Store-Locator.php",
+	     	"privacy_policy": "/Legal/Privacy-Policy.php"
+	    },
+        "RMH": {
+            "winefinder_id": 106,
+            "brand_code": "RMH",
+            "brand_name": "RumHaven",
+            "phone": "1-877-692-5875",
+            "brand_email": "consumerrelations@rumhaven.com",
+            "winefinder": "/where-to-buy.php",
+            "privacy_policy": "/legal/privacy-policy.php"
+	    },
+	    "RRW": {
+	     	"winefinder_id": 37,
+	     	"brand_code": "RRW",
+	     	"brand_name": "Red Rock Winery",
+	     	"phone": "1-888-271-9463",
+	     	"brand_email": "consumerrelations@redrockwinery.com",
+	     	"winefinder": "/Buy-Wine.php",
+	     	"privacy_policy": "/Legal/Privacy-Policy.php"
+	    },
+	    "SBH": {
+	     	"winefinder_id": 38,
+	     	"brand_code": "SBH",
+	     	"brand_name": "Starborough Wines",
+	     	"phone": "1-877-488-2783",
+	     	"brand_email": "consumerrelations@starboroughwines.com",
+	     	"winefinder": "/where-to-buy.html",
+	     	"privacy_policy": "/legal/privacy-policy.html"
+	    },
+	    "SHB": {
+	     	"winefinder_id": 83,
+	     	"brand_code": "SHB",
+	     	"brand_name": "Shellback Rum",
+	     	"phone": "1-855-363-9463",
+	     	"brand_email": "consumerrelations@shellbackrum.com",
+	     	"winefinder": "/where-to-buy.php",
+	     	"privacy_policy": "/inc/legal/legal-privacy-policy.php"
+	    },
+	    "SPT": {
+	     	"winefinder_id": 118,
+	     	"brand_code": "SPT",
+	     	"brand_name": "StoryPoint Vineyards",
+	     	"phone": "1-888-337-9463",
+	     	"brand_email": "consumerrelations@storypointvineyards.com",
+	     	"winefinder": "/wine-finder.html",
+	     	"privacy_policy": "/legal/privacy-policy.html"
+	    },
+	    "SVR": {
+	     	"winefinder_id": 0,
+	     	"brand_code": "SVR",
+	     	"brand_name": "Souverain",
+			"phone": "1-877-687-9463",
+	     	"brand_email": "consumerrelations@souverain.com",
+	     	"winefinder": "/find",
+	     	"privacy_policy": "/privacy-policy"
+	    },
+	    "TAL": {
+	     	"winefinder_id": 124,
+	     	"brand_code": "TAL",
+	     	"brand_name": "Talbott Vineyards",
+			"phone": "1-855-294-2556 ",
+	     	"brand_email": "consumerrelations@talbottvineyards.com",
+	     	"winefinder": "/Where-To-Buy",
+	     	"privacy_policy": "/Privacy-Policy"
+	    },
+	    "TBD": {
+	     	"winefinder_id": 123,
+	     	"brand_code": "TBD",
+	     	"brand_name": "Thunder Bird Brew",
+			"phone": "1-855-294-2556 ",
+	     	"brand_email": "consumerrelations@thunderbirdbrew.com",
+	     	"winefinder": "/where-to-buy.html",
+	     	"privacy_policy": "/privacy-policy"
+	    },
+	    "TLV": {
+	     	"winefinder_id": 4,
+	     	"brand_code": "TLV",
+	     	"brand_name": "Turning Leaf",
+	     	"phone": "1-(866) 998-5323",
+	     	"brand_email": "consumerrelations@turningleaf.com",
+	     	"winefinder": "/Where-to-Buy.php",
+	     	"privacy_policy": "/Legal/Privacy-Policy.php"
+	    },
+	    "TNG": {
+	     	"winefinder_id": 72,
+	     	"brand_code": "TNG",
+	     	"brand_name": "The Naked Grape",
+	     	"phone": "1(888)-653-4773",
+	     	"brand_email": "consumerrelations@thenakedgrapewine.com",
+	     	"winefinder": "/Where-to-Buy.php",
+	     	"privacy_policy": "/privacy-policy.php"
+	    },
+	    "VLT": {
+	     	"winefinder_id": 105,
+	     	"brand_code": "VLT",
+	     	"brand_name": "Vin Vault",
+	     	"phone": "1-855-967-9463",
+	     	"brand_email": "consumerrelations@vinvaultwines.com",
+	     	"winefinder": "/where-to-buy.php",
+	     	"privacy_policy": "/privacy-policy.php"
+	    },
+	    "VNQ": {
+	     	"winefinder_id": 102,
+	     	"brand_code": "VNQ",
+	     	"brand_name": "Viniq",
+	     	"phone": "1-855-304-2556",
+	     	"brand_email": "consumerrelations@viniq.com",
+	     	"winefinder": "/buy-liqueur.php",
+	     	"privacy_policy": "/legal/privacy-policy.php"
+	    },
+	    "WHE": {
+	     	"winefinder_id": 44,
+	     	"brand_code": "WHE",
+	     	"brand_name": "William Hill Estate",
+	     	"phone": "1-877-638-2783",
+	     	"brand_email": "consumerrelations@williamhillestate.com",
+	     	"winefinder": "/",
+	     	"privacy_policy": "/legal/privacy-policy.php"
+	    },
+	   "WLV": {
+		"winefinder_id": 77,
+		"brand_code": "WLV",
+		"brand_name": "Wild Vines",
+		"phone": "1-800-333-3320",
+		"brand_email": "consumerrelations@wildvines.com",
+		"winefinder": "/winelocate.php",
+		"privacy_policy": "/privacy.htm"
+	    },
+	    "WOW": {
+	     	"winefinder_id": 44,
+	     	"brand_code": "WOW",
+	     	"brand_name": "The World of Wines",
+	     	"phone": "1-877-638-2783",
+	     	"brand_email": "consumerrelations@theworldofwines.com",
+	     	"winefinder": "#",
+	     	"privacy_policy": "/legal/privacy-policy.php"
+	    },
+           "ZDS": {
+                "winefinder_id": 1,
+                "brand_code": "ZDS",
+                "brand_name": "Ca Brandy Summit",
+                "phone": "1-800-333-3320",
+                "brand_email": "consumerrelations@cabrandysummit.com",
+                "winefinder": "",
+                "privacy_policy": ""
+            },
+			"ZWD": {
+	     	"winefinder_id": 1,
+	     	"brand_code": "ZWD",
+	     	"brand_name": "Wine Dialog",
+	     	"phone": "1-877-638-2783",
+	     	"brand_email": "consumerrelations@winedialog.com",
+	     	"winefinder": "#",
+	     	"privacy_policy": "/legal/privacy-policy.php"
+	    }
+	}
+}

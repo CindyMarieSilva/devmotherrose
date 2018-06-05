@@ -1,0 +1,47 @@
+<div id="formHeaderText" class="formHeaderText">
+	<strong>Store Locator:</strong>
+	To search for a product fill out the search form below and click the "Find" button. Results searched by distance are approximate.
+</div>
+<form id="wheretobuyForm" class="form">
+	<input type="hidden" name="brand_code" value="{{brand_code}}" />
+	<input id="brand_id" type="hidden" name="brand_id" value="{{brand_id}}" />
+	<input id="latitude" type="hidden" name="latitude" value="" />
+	<input id="longitude" type="hidden" name="longitude" value="" />
+
+	<div id="flavorWrapper" class="flavorWrapperRow row group">
+		<label id="flavorLabel" class="flavorLabel wtbField label" for="flavor">Flavor</label>
+		<div id="flavorDropDownWrapper" class="wtbField fieldInput dropdownWrapper">
+			<div class="dropdownTxt flavorTxt group"><span class="selectedTxt">Select a Flavor</span><span class="arrowDown"></span></div>
+			<select id="flavor" class="flavorSelect wtbField fieldInput fieldSelect" name="PrdGrpId" data-parsley-required-message="Wine is required." data-parsley-required="true"></select>
+		</div>
+    </div>
+
+    <div id="acctGroup" class="acctGrpWrapperRow row group">
+		<div id="inStoresWrapper" class="acctGrpWrapper"><input id="inStores" class="wtbField fieldInput" type="radio" name="AcctGrpId" value="" /><label id="inStoresLabel" class="inStoresLabel wtbField label" for=""></label></div>
+		<div id="diningOutWrapper" class="acctGrpWrapper"><input id="diningOut" class="wtbField fieldInput" type="radio" name="AcctGrpId" value="" /><label id="diningOutLabel" class="diningOutLabel wtbField label" for=""></label></div>
+    </div>
+
+	<div id="zipWrapper" class="zipWrapperRow row group">
+		<label id="zipLabel" class="zipLabel wtbField label" for="zipCode">Zip Code</label>
+		<input id="zipCode" class="wtbField fieldInput" name="ZipCode" placeholder="Enter Zip Code" type="text" data-parsley-pattern="(^\d{5}$)" data-parsley-required-message="Zip code is required." data-parsley-pattern-message="Please enter 5 digits." data-parsley-trigger="keyup" data-parsley-required="true" />
+	</div>
+
+	<div id="radiusWrapper" class="radiusWrapperRow row group">
+		<label id="radiusLabel" class="radiusLabel wtbField label" for="radius" >Miles to Search</label>
+	   	<div id="radiusDropDownWrapper" class="wtbField fieldInput dropdownWrapper">
+			<div class="dropdownTxt radiusTxt group"><span class="selectedTxt">10 miles</span><span class="arrowDown"></span></div>
+			<select id="radius" class="radiusSelect wtbField fieldInput fieldSelect" name="radius">
+				<option value="10" selected>10 miles</option>
+				<option value="15">15 miles</option>
+				<option value="20">20 miles</option>
+				<option value="25">25 miles</option>
+			</select>
+		</div>
+	</div>
+
+	<div id="submitBtnWrapper" class="submitWrapper"><input id="submit" class="wtbSubmit wtbField fieldInput" type="submit" value="Find" /></div>
+</form>
+<div id="productAvailability" class="productAvailability">
+	Product availability information is accurate to the best of our knowledge from information provided by independent distributors of our
+	products as of <span id="availabilityDate" class="availabilityDate"></span>. There is no guarantee that the listed retailers will have the product in stock.
+</div>

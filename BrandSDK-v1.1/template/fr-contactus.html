@@ -1,0 +1,696 @@
+<h1>Contactez Nous</h1>
+<div id="formHeaderWrapper" class="formHeaderWrapper row group">
+	<div id="formHeaderText" class="forHeaderChild">
+		<p>
+			Nous vous remercions d'avoir visité notre site internet {{brand_name}}. Nous souhaiterions recueillir vos remarques. Veuillez nous consacrer quelques instants et fournir les renseignements suivants. Pour un complément d'information, vous pouvez également nous appeler au <a class="mobile" href="tel: +{{phone}}">+{{phone}}</a>, du lundi au vendredi, de 8h à 17h (heure normale du Pacifique) et le samedi de 9h à 15h (heure normale du Pacifique).
+		</p>
+	</div>
+	<div id="formHeaderWinefinder" class="forHeaderChild desktop">Vous ne trouvez pas vos vins préférés ? Utilisez l'onglet <a href="{{winefinder}}">Nos vins</a>.</div>
+	<div id="formHeaderPrivacypolicy" class="forHeaderChild desktop"><a href="{{privacy_policy}}" target="_window">Plus de détails sur l'utilisation que nous faisons de vos données</a>.</div>
+</div>
+<form name="contactUsIntlForm-FR" id="contactUsForm" class="form desktop">
+	<input type="hidden" name="brand_code" value="{{brand_code}}" />
+    <input type="hidden" name="form_lang" value="FR" />
+    <input type="hidden" name="verify" value="0" />
+    
+    <input type="hidden" name="phoneLanguage" value="Numéro de téléphone obligatoire" />
+    <input type="hidden" name="phoneTypeLanguage" value="Le type de téléphone est required" />
+    
+    <input type="hidden" name="successTxt" value="L’envoi a bien été effectué" />
+    <input type="hidden" name="thankyouTxt" value="Merci !" />
+    <input type="hidden" name="closeTxt" value="Cliquez n’importe où pour fermer." />
+
+	<div class="aboutMeWrapper contactusField" style="display: none;">
+		<!-- TODO: Add honey pot algorithm logic -->
+		<input class="textField" id="" name="">
+		<input class="textField" id="" name="">
+		<input class="textField" value="good" id="" name="">
+	</div>
+
+	<div id="reasonCodeWrapper" class="row group">
+		<label id="reasonCodeLabel" class="contactusField label" for="reasonCode">Quelle est la nature de votre message?:<span class="required">*</span></label>
+		<div id="reasonCodeDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt reasonCodeTxt group"><span class="selectedTxt">Sélectionnez une option</span><span class="arrowDown"></span></div>
+			<select id="reasonCode" class="contactusField fieldInput fieldSelect" name="nature" alt="Please select an option" data-parsley-required="true" data-parsley-required-message="Nature de votre message obligatoire" data-parsley-trigger="change">
+				<option value="">Sélectionnez une option</option>
+				<option value="Praise-Comment-Inquiry">Éloge d'un produit, remarque ou demande de renseignements</option>
+				<option value="Complaint">Réclamation sur un produit</option>
+				<option value="Case Follow Up">Suivi d'un dossier en cours</option>
+			</select>
+		</div>
+	</div>
+	<div id="followUpCaseWrapper" class="reasconCodeCheck row casefollowup group">
+		<p>s'il s'agit d'un suivi après un contact initial, prière de préciser le numéro de dossier qui vous a été fourni par l'équipe des Relations avec les consommateurs. </p>
+		<div>
+			<label id="followUpCaseLabel" class="contactusField label" for="caseNumber">N° de dossier:<span class="required">*</span></label>
+			<input id="followUpCase" class="contactusField fieldInput" type="text" name="case_id" value="" data-parsley-required="true" data-parsley-required-message="N° de dossier obligatoire" data-parsley-required="true" data-parsley-type="alphanum" data-parsley-trigger="keyup">
+		</div>
+	</div>
+
+	<div id="contactInfoText" class="contactusField reasconCodeCheck row general complaint"><strong>Coordonnées</strong></div>
+
+	<div id="firstNameWrapper" class="reasconCodeCheck row group general complaint casefollowup">
+		<label id="firstNameLabel" class="contactusField label" for="first_name">Prénom:<span class="required">*</span></label>
+    	<input id="firstName" class="contactusField fieldInput" name="first_name" type="text" data-parsley-maxlength="25" data-parsley-pattern="^[A-Za-z ]+$" data-parsley-required-message="Prénom obligatoire" data-parsley-trigger="keyup" data-parsley-required="true" />
+    </div>
+    <div id="lastNameWrapper" class="reasconCodeCheck row group general complaint casefollowup">
+    	<label id="lastNameLabel" class="contactusField label" for="last_name">Nom:<span class="required">*</span></label>
+    	<input id="lastName" class="contactusField fieldInput" name="last_name" type="text" data-parsley-trigger="keyup" data-parsley-pattern="^[A-Za-z ]+$" data-parsley-maxlength="25" data-parsley-required-message="Nom obligatoire" data-parsley-trigger="keyup" data-parsley-required="true" />
+    </div>
+	<div id="genderWrapper" class="reasconCodeCheck row group general complaint">
+		<label id="genderLabel" class="contactusField label" for="gender">Sexe:<span class="required">*</span></label>
+		<div id="genderDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt genderTxt group"><span class="selectedTxt">Sexe</span><span class="arrowDown"></span></div>
+			<select id="gender" class="contactusField fieldInput fieldSelect" name="gender" data-parsley-required="true" data-parsley-required-message="Sexe obligatoire" data-parsley-trigger="change">
+				<option value="">Sexe</option>
+				<option value="M">Homme</option>
+				<option value="F">Femme</option>
+				<option value="UNK">Refus de préciser</option>
+			</select>
+		</div>
+	</div>
+	<div id="dobWrapper" class="reasconCodeCheck row group general complaint">
+        <input type="hidden" name="dob" value="" />
+		<label id="dobLabel" class="contactusField label" for="dobMonth">Date de naissance:<span class="required">**</span></label>
+        <div id="dobDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+            <div class="dropdownTxt dobTxt group"><span class="selectedTxt">Month</span><span class="arrowDown"></span></div>
+            <select id="dobMonth" class="contactusField fieldInput fieldSelect" alt="Please select an option" data-parsley-required="true" data-parsley-required-message="Le mois est obligatoire" data-parsley-trigger="change">
+                <option value="" selected>Month</option>
+                <option value="01">Janvier</option>
+                <option value="02">Février</option>
+                <option value="03">Mars</option>
+                <option value="04">Avril</option>
+                <option value="05">Mai</option>
+                <option value="06">Juin</option>
+                <option value="07">Juillet</option>
+                <option value="08">Août</option>
+                <option value="09">Septembre</option>
+                <option value="10">Octobre</option>
+                <option value="11">Novembre</option>
+                <option value="12">Décembre</option>
+            </select>
+        </div>
+        <input id="dobDay" class="contactusField fieldInput" type="text" data-parsley-length="[2, 2]" placeholder="DD" data-parsley-pattern="/^(?:(0[1-9]|[12][0-9]|3[01]))$/" data-parsley-required-message="Le jour est obligatoire" data-parsley-trigger="keyup" data-parsley-required="true" />
+        <input id="dobYear" class="contactusField fieldInput" type="text" placeholder="AAAA" data-parsley-pattern="/^(?:(19|20)[0-9]{2})$/" data-parsley-required-message="L’année est obligatoire" data-parsley-trigger="keyup" data-parsley-required="true" />
+	</div>
+	<div id="emailWrapper" class="reasconCodeCheck row group general complaint casefollowup">
+		<label id="emailLabel" class="contactusField label" for="email">Courriel:<span class="required">*</span></label>
+    	<input id="email" class="contactusField fieldInput" name="email" type="email" data-parsley-trigger="change" data-parsley-type="email" data-parsley-required-message="Courriel obligatoire" data-parsley-trigger="keyup" data-parsley-required="true" />
+    </div>
+	<div id="countryWrapper" class="reasconCodeCheck row group general complaint">
+		<label id="countryLabel" class="contactusField label" for="country">Pays:<span class="required">*</span></label>
+		<div id="countryDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt countryTxt group"><span class="selectedTxt">United States of America</span><span class="arrowDown"></span></div>
+			<select id="country" class="contactusField fieldInput fieldSelect" name="country" data-parsley-required="true" data-parsley-required-message="Pays obligatoire" data-parsley-trigger="change">
+				<option value="USA" selected="selected">United States of America</option>
+				<option value="CAN">Canada</option>
+				<option value="AFG">Afghanistan</option>
+				<option value="ALB">Albania</option>
+				<option value="DZA">Algeria</option>
+				<option value="AND">Andorra</option>
+				<option value="AGO">Angola</option>
+				<option value="AIA">Anguilla</option>
+				<option value="ATA">Antarctica</option>
+				<option value="ATG">Antigua And Barbuda</option>
+				<option value="ARG">Argentina</option>
+				<option value="ARM">Armenia</option>
+				<option value="ABW">Aruba</option>
+				<option value="AUS">Australia</option>
+				<option value="AUT">Austria</option>
+				<option value="AZE">Azerbaijan</option>
+				<option value="BHS">Bahamas</option>
+				<option value="BHR">Bahrain</option>
+				<option value="BGD">Bangladesh</option>
+				<option value="BRB">Barbados</option>
+				<option value="BLR">Belarus</option>
+				<option value="BEL">Belgium</option>
+				<option value="BLZ">Belize</option>
+				<option value="BEN">Benin</option>
+				<option value="BMU">Bermuda</option>
+				<option value="BTN">Bhutan</option>
+				<option value="BOL">Bolivia</option>
+				<option value="BIH">Bosnia And Herzegowina</option>
+				<option value="BWA">Botswana</option>
+				<option value="BVT">Bouvet Island</option>
+				<option value="BRA">Brazil</option>
+				<option value="IOT">British Indian Ocean Territory</option>
+				<option value="BRN">Brunei Darussalam</option>
+				<option value="BGR">Bulgaria</option>
+				<option value="BFA">Burkina Faso</option>
+				<option value="BDI">Burundi</option>
+				<option value="KHM">Cambodia</option>
+				<option value="CMR">Cameroon</option>
+				<option value="CPV">Cape Verde</option>
+				<option value="CYM">Cayman Islands</option>
+				<option value="CAF">Central African Republic</option>
+				<option value="TCD">Chad</option>
+				<option value="CHL">Chile</option>
+				<option value="CHN">China</option>
+				<option value="CXR">Christmas Island</option>
+				<option value="CCK">Cocos (Keeling) Islands</option>
+				<option value="COL">Colombia</option>
+				<option value="COM">Comoros</option>
+				<option value="COG">Congo</option>
+				<option value="COK">Cook Islands</option>
+				<option value="CRI">Costa Rica</option>
+				<option value="CIV">Cote D"Ivoire</option>
+				<option value="HRV">Croatia</option>
+				<option value="CUB">Cuba</option>
+				<option value="CYP">Cyprus</option>
+				<option value="CZE">Czech Republic</option>
+				<option value="DNK">Denmark</option>
+				<option value="DJI">Djibouti</option>
+				<option value="DMA">Dominica</option>
+				<option value="DOM">Dominican Republic</option>
+				<option value="TMP">East Timor</option>
+				<option value="ECU">Ecuador</option>
+				<option value="EGY">Egypt</option>
+				<option value="SLV">El Salvador</option>
+				<option value="GNQ">Equatorial Guinea</option>
+				<option value="ERI">Eritrea</option>
+				<option value="EST">Estonia</option>
+				<option value="ETH">Ethiopia</option>
+				<option value="FLK">Falkland Islands (Malvinas)</option>
+				<option value="FRO">Faroe Islands</option>
+				<option value="FJI">Fiji</option>
+				<option value="FIN">Finland</option>
+				<option value="FRA">France</option>
+				<option value="FXX">France</option>
+				<option value="GUF">French Guiana</option>
+				<option value="PYF">French Polynesia</option>
+				<option value="ATF">French Southern Territories</option>
+				<option value="GAB">Gabon</option>
+				<option value="GMB">Gambia</option>
+				<option value="GEO">Georgia</option>
+				<option value="DEU">Germany</option>
+				<option value="GHA">Ghana</option>
+				<option value="GIB">Gibraltar</option>
+				<option value="GRC">Greece</option>
+				<option value="GRL">Greenland</option>
+				<option value="GRD">Grenada</option>
+				<option value="GLP">Guadeloupe</option>
+				<option value="GUM">Guam</option>
+				<option value="GTM">Guatemala</option>
+				<option value="GIN">Guinea</option>
+				<option value="GNB">Guinea-Bissau</option>
+				<option value="GUY">Guyana</option>
+				<option value="HTI">Haiti</option>
+				<option value="HOL">Holland</option>
+				<option value="HMD">Heard And Mc Donald Islands</option>
+				<option value="HND">Honduras</option>
+				<option value="HKG">Hong Kong</option>
+				<option value="HUN">Hungary</option>
+				<option value="ISL">Iceland</option>
+				<option value="IND">India</option>
+				<option value="IDN">Indonesia</option>
+				<option value="IRN">Iran (Islamic Republic Of)</option>
+				<option value="IRQ">Iraq</option>
+				<option value="IRL">Ireland</option>
+				<option value="ISR">Israel</option>
+				<option value="ITA">Italy</option>
+				<option value="JAM">Jamaica</option>
+				<option value="JPN">Japan</option>
+				<option value="JOR">Jordan</option>
+				<option value="KAZ">Kazakhstan</option>
+				<option value="KEN">Kenya</option>
+				<option value="KIR">Kiribati</option>
+				<option value="PRK">Korea</option>
+				<option value="KOR">Korea</option>
+				<option value="KWT">Kuwait</option>
+				<option value="KGZ">Kyrgyzstan</option>
+				<option value="LAO">Lao People's Democratic Republic</option>
+				<option value="LVA">Latvia</option>
+				<option value="LBN">Lebanon</option>
+				<option value="LSO">Lesotho</option>
+				<option value="LBR">Liberia</option>
+				<option value="LBY">Libyan Arab Jamahiriya</option>
+				<option value="LIE">Liechtenstein</option>
+				<option value="LTU">Lithuania</option>
+				<option value="LUX">Luxembourg</option>
+				<option value="MAC">Macau</option>
+				<option value="MKD">Macedonia</option>
+				<option value="MDG">Madagascar</option>
+				<option value="MWI">Malawi</option>
+				<option value="MYS">Malaysia</option>
+				<option value="MDV">Maldives</option>
+				<option value="MLI">Mali</option>
+				<option value="MLT">Malta</option>
+				<option value="MHL">Marshall Islands</option>
+				<option value="MTQ">Martinique</option>
+				<option value="MRT">Mauritania</option>
+				<option value="MUS">Mauritius</option>
+				<option value="MYT">Mayotte</option>
+				<option value="MEX">Mexico</option>
+				<option value="FSM">Micronesia</option>
+				<option value="MDA">Moldova</option>
+				<option value="MCO">Monaco</option>
+				<option value="MNG">Mongolia</option>
+				<option value="MSR">Montserrat</option>
+				<option value="MAR">Morocco</option>
+				<option value="MOZ">Mozambique</option>
+				<option value="MMR">Myanmar</option>
+				<option value="NAM">Namibia</option>
+				<option value="NRU">Nauru</option>
+				<option value="NPL">Nepal</option>
+				<option value="NLD">Netherlands</option>
+				<option value="ANT">Netherlands Antilles</option>
+				<option value="NCL">New Caledonia</option>
+				<option value="NZL">New Zealand</option>
+				<option value="NIC">Nicaragua</option>
+				<option value="NER">Niger</option>
+				<option value="NGA">Nigeria</option>
+				<option value="NIU">Niue</option>
+				<option value="NFK">Norfolk Island</option>
+				<option value="MNP">Northern Mariana Islands</option>
+				<option value="NOR">Norway</option>
+				<option value="OMN">Oman</option>
+				<option value="PAK">Pakistan</option>
+				<option value="PLW">Palau</option>
+				<option value="PAN">Panama</option>
+				<option value="PNG">Papua New Guinea</option>
+				<option value="PRY">Paraguay</option>
+				<option value="PER">Peru</option>
+				<option value="PHL">Philippines</option>
+				<option value="PCN">Pitcairn</option>
+				<option value="POL">Poland</option>
+				<option value="PRT">Portugal</option>
+				<option value="PRI">Puerto Rico</option>
+				<option value="QAT">Qatar</option>
+				<option value="REU">Reunion</option>
+				<option value="ROM">Romania</option>
+				<option value="RUS">Russian Federation</option>
+				<option value="RWA">Rwanda</option>
+				<option value="KNA">Saint Kitts And Nevis</option>
+				<option value="LCA">Saint Lucia</option>
+				<option value="VCT">Saint Vincent And The Grenadines</option>
+				<option value="WSM">Samoa</option>
+				<option value="SMR">San Marino</option>
+				<option value="STP">Sao Tome And Principe</option>
+				<option value="SAU">Saudi Arabia</option>
+				<option value="SEN">Senegal</option>
+				<option value="SYC">Seychelles</option>
+				<option value="SLE">Sierra Leonev</option>
+				<option value="SGP">Singapore</option>
+				<option value="SVK">Slovakia (Slovak Republic)</option>
+				<option value="SVN">Slovenia</option>
+				<option value="SLB">Solomon Islands</option>
+				<option value="SOM">Somalia</option>
+				<option value="ZAF">South Africa</option>
+				<option value="SGS">South Georgia And The S. Sandwich Is.</option>
+				<option value="ESP">Spain</option>
+				<option value="LKA">Sri Lanka</option>
+				<option value="SHN">St. Helena</option>
+				<option value="SPM">St. Pierre And Miquelon</option>
+				<option value="SDN">Sudan</option>
+				<option value="SUR">Suriname</option>
+				<option value="SJM">Svalbard And Jan Mayen Islands</option>
+				<option value="SWZ">Swaziland</option>
+				<option value="SWE">Sweden</option>
+				<option value="CHE">Switzerland</option>
+				<option value="SYR">Syrian Arab Republic</option>
+				<option value="TWN">Taiwan</option>
+				<option value="TJK">Tajikistan</option>
+				<option value="TZA">Tanzania</option>
+				<option value="THA">Thailand</option>
+				<option value="TGO">Togo</option>
+				<option value="TKL">Tokelau</option>
+				<option value="TON">Tonga</option>
+				<option value="TOR">Tortola</option>
+				<option value="TTO">Trinidad And Tobago</option>
+				<option value="TUN">Tunisia</option>
+				<option value="TUR">Turkey</option>
+				<option value="TKM">Turkmenistan</option>
+				<option value="TCA">Turks And Caicos Islands</option>
+				<option value="TUV">Tuvalu</option>
+				<option value="UGA">Uganda</option>
+				<option value="UKR">Ukraine</option>
+				<option value="ARE">United Arab Emirates</option>
+				<option value="GBR">United Kingdom</option>
+				<option value="UMI">United States Minor Outlying Islands</option>
+				<option value="URY">Uruguay</option>
+				<option value="UZB">Uzbekistan</option>
+				<option value="VUT">Vanuatu</option>
+				<option value="VAT">Vatican City State (Holy See)</option>
+				<option value="VEN">Venezuela</option>
+				<option value="VNM">Viet Nam</option>
+				<option value="VGB">Virgin Islands (British)</option>
+				<option value="VIR">Virgin Islands (U.S.)</option>
+				<option value="WLF">Wallis And Futuna Islands</option>
+				<option value="ESH">Western Sahara</option>
+				<option value="WIN">West Indies</option>
+				<option value="YEM">Yemen</option>
+				<option value="YUG">Yugoslavia</option>
+				<option value="ZAR">Zaire</option>
+				<option value="ZMB">Zambia</option>
+				<option value="ZWE">Zimbabwe</option>
+			</select>
+		</div>
+	</div>
+	<div id="addressWrapper" class="reasconCodeCheck row group general complaint">
+		<label id="addressLabel" class="contactusField label" for="address">Adresse:</label>
+		<input id="address" type="text" class="contactusField fieldInput" name="address" />
+	</div>
+	<div id="cityWrapper" class="reasconCodeCheck row group general complaint">
+		<label id="cityLabel" class="contactusField label" for="city">Ville:</label>
+		<input id="city" type="text" class="contactusField fieldInput" name="city" />
+	</div>
+	<div id="stateWrapper" class="reasconCodeCheck row group checkCountry USA general complaint">
+		<label id="stateLabel" class="contactusField label" for="state">État:</label>
+		<div id="stateDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt stateTxt group"><span class="selectedTxt">Choisissez un État</span><span class="arrowDown"></span></div>
+			<select id="state" class="contactusField fieldInput fieldSelect" name="state">
+				<option value="">Choisissez un État</option>
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DC">D.C.</option>
+				<option value="DE">Delaware</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="kS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="Ri">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+			</select>
+		</div>
+	</div>
+	<div id="provinceWrapper" class="row group checkCountry CAN">
+		<label id="provinceLabel" class="contactusField label" for="state">Province:</label>
+		<div id="provinceDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt provinceTxt group"><span class="selectedTxt">Choisir une province</span><span class="arrowDown"></span></div>
+			<select id="province" class="contactusField fieldInput fieldSelect" name="state" >
+				<option value="">Choisir une province</option>
+				<option value="AB">Alberta</option>
+				<option value="BC">British Columbia</option>
+				<option value="MB">Manitoba</option>
+				<option value="NB">New Brunswick</option>
+				<option value="NL">NewFoundland and Labrador</option>
+				<option value="NT">Northwest Territories</option>
+				<option value="NS">Nova Scotia</option>
+				<option value="NU">Nunavut</option>
+				<option value="OT">Ontario</option>
+				<option value="PE">Prince Edward Island</option>
+				<option value="QC">Quebec</option>
+				<option value="SK">Saskatchewan</option>
+				<option value="YT">Yukon</option>
+			</select>
+		</div>
+	</div>
+	<div id="zipWrapper" class="reasconCodeCheck row group general complaint">
+		<label id="zipLabel" class="contactusField label" for="zip">Code postal:<span class="required">*</span></label>
+    	<input id="zip" class="contactusField fieldInput" name="zip" type="text" data-parsleyLength="[5, 20]" data-parsley-required-message="Code postal obligatoire" data-parsley-trigger="keyup" data-parsley-required="true" />
+    </div>
+    <div id="phoneWrapper" class="reasconCodeCheck row group general complaint casefollowup" >
+		<label id="phoneLabel" class="contactusField label" for="phone">Numéro de téléphone:<span class="required reasconCodeCheck casefollowup complaint">*</span></label>
+    	<input id="phone" class="contactusField fieldInput" name="phone" type="text" />
+    	<div id="phoneTypeDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt phoneTypeTxt group"><span class="selectedTxt">Sélectionnez une option</span><span class="arrowDown"></span></div>
+			<select id="phoneType" name="phone_type" class="fieldInput fieldSelect" >
+				<option value="">Sélectionnez une option</option>
+				<option value="Cell">Portable</option>
+				<option value="Home">Domicile</option>
+				<option value="Work">Professionnel</option>
+			</select>
+		</div>
+    </div>
+    <div id="prefContactMethod" class="reasconCodeCheck row group general complaint casefollowup">
+    	<div id="prefContactMethodLabelWrapper"><label id="contactMethodLabel" class="contactusField label" for="phone_method">Méthode de contact privilégiée :</label></div>
+		<div id="prefContactMethodWrapper">
+			<input id="prefContactEmail" class="contactusField radioField" type="radio" name="phone_method" value="Email" /><label class="radioInlineLabel contactusField label" for="prefContactEmail">Courriel</label>
+			<input id="prefContactPhone" class="contactusField radioField" type="radio" name="phone_method" value="Phone Number" /><label class="radioInlineLabel contactusField label" for="prefContactPhone">Téléphone</label>
+			<input id="prefContactMail" class="contactusField radioField" type="radio" name="phone_method" value="Mail" /><label class="radioInlineLabel contactusField label" for="prefContactMail">Courrier</label>
+		</div>
+    </div>
+	<div id="productHeaderWrapper" class="reasconCodeCheck row group general complaint">
+		<strong>Questions sur les produits</strong>
+		<p>Veuillez répondre aux questions suivantes afin de nous aider à mieux vous servir:</p>
+	</div>
+	<div id="upcWrapper" class="row group reasconCodeCheck general complaint">
+		<label id="upcLabel" class="contactusField label" for="upc">Veuillez saisir le numéro UPC à dix chiffres:</label>
+		<input id="upc"  class="contactusField fieldInput" type="text" name="upc" maxlength="10" value="">
+		<a href="#" id="showUPCExample">Détails</a>
+		<div id="upcDetailWrapper">
+			<img src="/BrandSDK-v1.1/images/contactus/barcode.gif" align="Sku #" id="sku" width="168">
+		</div>
+	</div>
+	<div id="bottleProductCodeWrapper" class="row group reasconCodeCheck complaint">
+		<label id="bottleProductCodeLabel" class="contactusField label" for="bottleProductCode">Prière de préciser le code de la date de mise en bouteille </label>
+		<input  id="bottleProductCode" class="contactusField fieldInput" type="text" name="product_code" value="">
+		<div><a href="/BrandSDK-v1.1/images/contactus/bottleProductCodeExample.png" id="bottleProductCodeExample" target="_blank">Détails</a></div>
+	</div>
+	<div id="purchaseDateWrapper" class="reasconCodeCheck row group general complaint">
+		<label id="purchaseDateLabel" class="contactusField label" for="purchaseDate">Vous souvenez-vous de la date d'achat de ce produit?</label>
+		<input id="purchaseDate" class="contactusField fieldInput" name="purchase_date" type="text" placeholder="MM-DD-AAAA" data-parsley-pattern="/^(?:(0[1-9]|1[012])[-](0[1-9]|[12][0-9]|3[01])[-](19|20)[0-9]{2})$/" data-parsley-trigger="keyup" />
+	</div>
+	<div id="purchasePlace" class="reasconCodeCheck row group general complaint">
+		<label id="purchasePlaceLabel" class="contactusField label" for="purchasePlace">Où l'avez-vous acheté?:</label>
+		<div id="purchasePlaceDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt purchasePlaceTxt group"><span class="selectedTxt">Sélectionnez une option</span><span class="arrowDown"></span></div>
+			<select id="purchasePlace" class="contactusField fieldInput fieldSelect" name="where_buy" alt="Please select an option">
+				<option value="">Sélectionnez une option</option>
+				<option value="CONVENIENCE">Boutique de proximité</option>
+				<option value="DRUG">Pharmacie</option>
+				<option value="GROCERY">Épicerie</option>
+				<option value="LIQUOR">Caviste</option>
+				<option value="Bx">« Base Exchange » militaire ou boutique sur une base militaire </option>
+				<option value="ONLINE">Commerçant en ligne</option>
+				<option value="GIFT">C'était un cadeau</option>
+				<option value="RTHF">Restaurant ou bar</option>
+				<option value="TASTINGRM">Salon de dégustation, festival ou évènement</option>
+				<option value="DISCOUNTERS">Commerçant spécialisé</option>
+				<option value="Other">Boutique de produits détaxés</option>
+				<option value="UNKNOWN">Je ne l'ai pas encore acheté</option>
+			</select>
+		</div>
+	</div>
+	<div id="purchaseReasonWrapper" class="reasconCodeCheck row group general complaint">
+		<label id="purchaseReasonLabel" class="contactusField label" for="purchaseReason">Pourquoi avez-vous acheté ce produit?</label>
+		<div id="purchaseReasonDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt purchaseReasonTxt group"><span class="selectedTxt">Sélectionnez une option</span><span class="arrowDown"></span></div>
+			<select id="purchaseReason" class="contactusField fieldInput fieldSelect" name="why_buy" alt="Please select an option">
+				<option value="">Sélectionnez une option</option>
+				<option value="Appealing">L'étiquette et l'emballage étaient attrayants</option>
+				<option value="Awards">Competitive Awards</option>
+				<option value="BuyList">J'ai lu une recommandation dans un magazine ou une liste de recommandations</option>
+				<option value="CAUSE">Le soutien d'une bonne cause par la marque</option>
+				<option value="EVENT-TR">Dégustation lors d'un évènement</option>
+				<option value="RECOFrFam">Recommandé par un ami ou un membre de ma famille</option>
+				<option value="Goodvalue">Il était d'un bon rapport qualité-prix</option>
+				<option value="LabelDes">La description et les notes de dégustation étaient attrayantes</option>
+				<option value="AdvMag">J'ai vu une publicité dans une revue/sur une affiche ou dans un journal</option>
+				<option value="MIR-CPN">J'avais un bon d'achat, un rabais ou une offre promotionnelle</option>
+				<option value="On Display">Il était sur un présentoir dans un magasin</option>
+				<option value="ONSALE">Il était en promotion</option>
+				<option value="RECORest">Recommandé par un restaurant</option>
+				<option value="SOCNETWORK">J'ai lu un message posté sur les réseaux sociaux (Facebook, Twitter, Pinterest, Instagram)</option>
+				<option value="Storedemo">Il était en démonstration dans un magasin</option>
+				<option value="RECOStore">Recommandé par un commerçant</option>
+				<option value="VarietalPref">Preferred This Varietal</option>
+				<option value="AdvWeb">J'ai vu une publicité en ligne</option>
+                <option value="Awards">Prix compétitifs</option> 
+                <option value="Catchy Name">Nom accrocheur</option> 
+                <option value="Country of Origin">Pays d'origine</option> 
+                <option value="It was Gallo">Je l'ai essayé parce que c'est Gallo</option> 
+                <option value="Location">L'état ou l'appellation m'a influencé</option> 
+                <option value="Points">Nombre de points élevé attribué par les critiques viticoles</option> 
+                <option value="Saw on TV">Vu à la télévision</option> 
+                <option value="Tried Socially">Goûté lors d'une occasion</option> 
+                <option value="VarietalPref">Préférence pour ce cépage</option> 
+			</select>
+		</div>
+	</div>
+	<div id="occasionWrapper" class="reasconCodeCheck row group general complaint">
+		<label id="occasionLabel" class="contactusField label" for="occasion">À quelle occasion l'avez-vous consommé?</label>
+		<div id="occasionDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt occasionTxt group"><span class="selectedTxt">Sélectionnez une option</span><span class="arrowDown"></span></div>
+			<select id="occasion" class="contactusField fieldInput fieldSelect" name="occasion" alt="Please select an option">
+				<option value="">Sélectionnez une option</option>
+				<option value="ETM-HA">Après le dîner, pour me détendre avec des amis</option>
+				<option value="DFT-HD">Chez moi pour un repas avec ma tendre moitié</option>
+				<option value="GRT-HSO">Une occasion spéciale</option>
+				<option value="ETM-HS">Un dîner chez moi avec des amis/la famille</option>
+				<option value="WT">Lors d'une dégustation</option>
+                <option value="MP">Pendant la préparation d'un repas</option>
+                <option value="MWF">Déjeuner ou brunch</option>
+				<option value="GRT-RD">Lors d'un repas au restaurant avec ma tendre moitié</option>
+				<option value="NIY-HH">« Happy Hour » ou rencontre avec des amis en début de soirée</option>
+				<option value="NIY-BA">Dans un bar ou un club dans le cadre d'une soirée</option>
+				<option value="UNW-HA">Pendant un moment seul(e), pour me détendre, devant mon ordinateur, en lisant, etc.</option>
+				<option value="GTGV-OSO">Une occasion en plein air : pique-nique, plage, barbecue</option>
+                <option value="NIY-FH">Chez des amis</option> 
+                <option value="ETM-HS">Chez moi en compagnie d'amis</option> 
+                <option value="GRT-RSO">Occasion spéciale au restaurant</option> 
+                <option value="NC">Je ne l'ai pas consommé</option> 
+			</select>
+		</div>
+	</div>
+	<div id="servingMethodWrapper" class="reasconCodeCheck row group general complaint">
+		<label id="servingMethodLabel" class="contactusField label" for="servingMethod">Comment le produit a-t-il été servi?</label>
+		<div id="servingMethodDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt servingMethodTxt group"><span class="selectedTxt">Sélectionnez une option</span><span class="arrowDown"></span></div>
+			<select id="servingMethod" class="contactusField fieldInput fieldSelect" name="how_served" alt="Please select an option">
+				<option value="">Sélectionnez une option</option>
+				<option value="JUICE">Dans un punch</option>
+				<option value="ICE B">Dans un seau à glace</option>
+				<option value="COOK">Pour faire la cuisine</option>
+				<option value="SODA TONIC">Mélangé avec une boisson gazeuse</option>
+				<option value="DIDNOTSRV">Pas encore servi</option>
+				<option value="ROOM">À température ambiante</option>
+				<option value="OVERICE">Avec des glaçons</option>
+				<option value="REFER">Réfrigéré ou cave à vin</option>
+                <option value="COLA">Avec du coca</option> 
+                <option value="MIXEDWITH">Avec d'autres boissons alcoolisées</option> 
+                <option value="COFFEE">Avec du café</option> 
+                <option value="FROZEN">Servi très froid</option> 
+                <option value="WARM">Servi tiède</option> 
+			</select>
+		</div>
+	</div>
+	<div id="futurePurchaseWrapper" class="reasconCodeCheck row group general complaint">
+		<label id="futurePurchaseLabel" class="contactusField label" for="futurePurchase">Envisagez-vous d'acheter à nouveau ce produit ?</label>
+		<div id="futurePurchaseDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt futurePurchaseTxt group"><span class="selectedTxt">Sélectionnez une option</span><span class="arrowDown"></span></div>
+			<select id="futurePurchase" class="contactusField fieldInput fieldSelect" name="buy_again" alt="Please select an option">
+				<option value="">Sélectionnez une option</option>
+				<option value="Y">Oui, rachat certain</option>
+				<option value="W">Rachat probable à l'avenir</option>
+				<option value="U">Indécis(e)</option>
+				<option value="P">Rachat improbable à l'avenir</option>
+				<option value="N">Non, aucune intention de rachat</option>
+			</select>
+		</div>
+	</div>
+	<div id="issueOccurrenceWrapper" class="reasconCodeCheck row group complaint">
+		<label id="issueOccurrenceLabel" class="contactusField label" for="issueOccurrence">Quand avez-vous constaté qu'il y avait un problème?</label>
+		<div id="issueOccurrenceDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt issueOccurrenceTxt group"><span class="selectedTxt">Sélectionnez une option</span><span class="arrowDown"></span></div>
+			<select id="issueOccurrence" class="contactusField fieldInput fieldSelect"  name="when_notice" alt="Please select an option">
+				<option value="">Sélectionnez une option</option>
+				<option value="Tapopen">En retirant la capsule en aluminium</option>
+				<option value="Screwcapopen">En retirant la capsule à vis</option>
+				<option value="Corkopen">En retirant le bouchon ou à l'ouverture</option>
+				<option value="First">Au premier verre</option>
+				<option value="Second">Au second verre</option>
+				<option value="Last">Au dernier verre</option>
+				<option value="Empty">Une fois la bouteille vide</option>
+				<option value="Firstsip">First Sip from Bottle</option>
+				<option value="Sniu">Constatation avant d'ouvrir la bouteille</option>
+                <option value="Midbottle">À mi-bouteille</option> 
+                <option value="Firstsip">Première gorgée</option> 
+                <option value="Osniu">Bouteille ouverte, conservée mais pas versée</option> 
+                <option value="Shelf">Produit stocké sur l'étagère</option> 
+			</select>
+		</div>
+	</div>
+	<div id="storageLocationWrapper" class="reasconCodeCheck row group complaint">
+		<label id="storageLocationLabel" class="contactusField label" for="storageLocation">Où le produit était-il stocké avant d'être servi?</label>
+		<div id="storageLocationDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt storageLocationTxt group"><span class="selectedTxt">Sélectionnez une option</span><span class="arrowDown"></span></div>
+			<select id="storageLocation" class="contactusField fieldInput fieldSelect" name="where_stored"  alt="Please select an option">
+				<option value="">Sélectionnez une option</option>
+				<option value="Countertop">Comptoir de cuisine ou étagère</option>
+				<option value="Cupboard">Placard ou cellier à température ambiante</option>
+				<option value="Garage">Stockage à l'extérieur : garage, abri voiture, réserve</option>
+				<option value="Refrigerator">Réfrigérateur</option>
+				<option value="Cellar">Cave ou sous-sol</option>
+				<option value="Chiller">Cave à vin</option>
+				<option value="Sdns">Utilisé le jour de l'achat, stockage de moins de 24 heures.</option>
+                <option value="Rack">Casier à bouteilles</option> 
+			</select>
+		</div>
+	</div>
+	<div id="openingMethodWrapper" class="reasconCodeCheck row group complaint">
+		<label id="openingMethodLabel" class="contactusField label" for="openingMethod">Quel type de tire-bouchon avez-vous utilisé?</label>
+		<div id="openingMethodDropDownWrapper" class="contactusField fieldInput dropdownWrapper">
+			<div class="dropdownTxt openingMethodTxt group"><span class="selectedTxt">Sélectionnez une option</span><span class="arrowDown"></span></div>
+			<select id="openingMethod" class="contactusField fieldInput fieldSelect" name="what_opener" alt="Please select an option">
+				<option value="">Sélectionnez une option</option>
+				<option value="T">Tire-bouchon simple</option>
+				<option value="Waiter">Limonadier</option>
+				<option value="Wing">Couteau de sommelier à un cran</option>
+				<option value="Boot">Couteau de sommelier à deux crans</option>
+				<option value="Rabbit">Screwpull</option>
+				<option value="Brucart">Brucart</option>
+				<option value="Two Prong">Bilame</option>
+				<option value="Speed">Tire-bouchon à levier</option>
+				<option value="Double Helix">Double helix</option>
+				<option value="Ncs">Aucun - capsule à vis ou cubitainer</option>
+				<option value="Other Opener">Autre</option>
+			</select>
+		</div>
+	</div>
+	<div id="commentsHeaderWrapper" class="reasconCodeCheck row group general complaint casefollowup"><strong>Remarques</strong></div>
+	<div id="userCommentWrapper" class="reasconCodeCheck row general complaint casefollowup">
+		<label id="userCommentLabel" class="contactusField label" for="comments">Veuillez nous communiquer vos remarques ci-dessous :<span class="required">*</span></label>
+		<textarea id="userComment" class="contactusField fieldInput fieldTextArea" name="comments" data-parsley-required="true" data-parsley-trigger="keyup" data-parsley-maxlength="250" data-parsley-maxlength-message="250 character limit" data-parsley-required-message="Remarques obligatoire"></textarea>
+	</div>
+	<div id="moreInfoIntlWrapper" class="row group checkCountry CAN INT yes-check">
+		<input id="moreInfoIntl" class="contactusField fieldInput fieldCheckBox" type="checkbox" name="yes_communication" value="Y" />
+		<label id="moreInfoIntlLabel" class="contactusField label" for="moreInfoIntl">
+			Oui, je voudrais recevoir des communications occasionnelles à propos des promotions, offres spéciales et d'autres informations de {{brand_name}}. D'autre part, je consens à ce que les données que j'ai fournies sur ce site Internet aux États-Unis ou au Royaume-Uni soient transmises, stockées et traitées conformément à la <a href="{{privacy_policy}}" rel="external" title="Find out how we use your information.">politique de protection des données personnelles</a> de {{brand_name}}.
+		</label>
+	</div>
+	<div id="userOpinionWrapper" class="reasconCodeCheck row group checkCountry USA general complaint yes-check">
+		<input id="userOpinion" class="contactusField fieldInput fieldCheckBox" type="checkbox" name="yes_opinion" value="Y"/>
+		<label id="userOpinionLabel" class="contactusField label" for="userOpinion">Oui, je suis disposé(e) à communiquer mon avis à propos des changements éventuellement apportés à l'avenir au produit ou au conditionnement.</label>
+	</div>
+	<div id="moreInfoWrapper" class="reasconCodeCheck row group checkCountry USA general complaint yes-check">
+		<input id="moreInfo" class="contactusField fieldInput fieldCheckBox" type="checkbox" name="yes_communication" value="Y"/>
+		<label id="moreInfoLabel" class="contactusField label" for="moreInfo">Oui, je voudrais recevoir des communications et d'autres informations de  {{brand_name}}.</label>
+	</div>
+	<div id="userContactWrapper" class="reasconCodeCheck row group general complaint no-check">
+		<input id="userContact" class="contactusField fieldInput fieldCheckBox" type="checkbox" name="no_contact" value="Y">
+		<label id="userContactLabel" class="contactusField label" for="userContact">Non. Veuillez ne pas me contacter à l'avenir.</label>
+	</div>
+    
+    <div id="bottom-text">
+        <p>En fournissant ces renseignements, je comprends et consens sans équivoque à la transmission de mes données personnelles à d'autres pays (y compris les États-Unis, le Royaume-Uni, le Canada et d'autres pays dans l'Espace économique européen et en dehors) comme le prévoit la <a href="{{privacy_policy}}" rel="external" title="Find out how we use your information.">politique de protection des données personnelles</a>.</p>
+    </div>
+
+	<div id="submitBtnWrapper" class="reasconCodeCheck general complaint casefollowup"><input id="submit" class="fieldInput" type="submit" value="Envoyer"/></div>
+
+	<div id="formRequirementsWrapper" class="reasconCodeCheck general complaint casefollowup">
+		<p><span class="required">*</span> Champs obligatoires</p>
+		<p><span class="required">**</span> Confirmez que vous avez l'âge légal pour la consommation d'alcool dans le pays où vous consultez ce site.</p>
+	</div>
+</form>
